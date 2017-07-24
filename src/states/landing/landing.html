@@ -1,0 +1,31 @@
+<md-toolbar layout="row">
+  <div class="md-toolbar-tools">
+     <i class="material-icons">blur_on</i> <span>Sample App</span> 
+    <div flex></div>
+    <div>
+      <md-menu md-position-mode="target-right target">
+        <md-button md-menu-origin aria-label="Open menu" class="md-icon-button" ng-click="$mdMenu.open()">
+          <md-icon>more_vert</md-icon>
+        </md-button>
+        <md-menu-content width="3">
+          <md-menu-item>
+            <md-button><md-icon md-menu-align-target>location_city</md-icon> Work</md-button>
+          </md-menu-item>
+          <md-menu-item>
+            <md-button><md-icon md-menu-align-target>hotel</md-icon> Home</md-button>
+          </md-menu-item>
+          <md-menu-item>
+            <md-button disabled="true"><md-icon md-menu-align-target>flight</md-icon> Vacation</md-button>
+          </md-menu-item>
+          <md-menu-divider></md-menu-divider>
+          <md-menu-item>
+            <md-button>Log Out</md-button>
+          </md-menu-item>
+        </md-menu-content>
+      </md-menu>
+    </div>
+  </div>
+</md-toolbar>
+<md-content layout layout-padding>
+  <people people="$ctrl.people"></people>
+</md-content>
