@@ -4,14 +4,14 @@ var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: {
-    main: './docs/app.js',
+    main: './src/app.js',
   },
   output: {
     path: path.join(__dirname, 'docs'),
     filename: 'app.js',
   },
   plugins: [
-    new CopyWebpackPlugin([{ from: 'docs/index.html', to: 'index.html' }]),
+    new CopyWebpackPlugin([{ from: 'src/index.html', to: 'index.html' }]),
   ],
   module: {
     loaders: [
