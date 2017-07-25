@@ -1,0 +1,27 @@
+<!-- <md-subheader>Schedule</md-subheader> -->
+<md-content layout="column" flex>
+  <md-list class="md-dense" flex>
+    <div ng-repeat="(day, items) in $ctrl.scheduleItems">
+      <md-subheader>{{day}}</md-subheader>
+      <md-list-item class="md-3-line" ng-repeat="item in items">
+        <md-icon ng-if="item.icon">{{item.icon}}</md-icon>
+        <div class="md-list-item-text">
+          <h3> {{ item.description }} </h3>
+          <p>{{item.startTime}} - {{item.endTime}}</p>
+          <p ng-if="item.locationName">{{item.locationName}}</p>
+          <p ng-if="item.address">{{item.address}}</p>
+        </div>
+      </md-list-item>
+    </div>
+
+    <md-divider ></md-divider>
+    <md-subheader class="md-no-sticky">Classes</md-subheader>
+    <md-list-item class="md-3-line" ng-repeat="item in items">
+
+      <md-button class="md-secondary md-icon-button" ng-click="doSecondaryAction($event)" ng-if="item.options.actionIcon" aria-label="call">
+        <md-icon md-svg-icon="{{item.options.actionIcon}}"></md-icon>
+      </md-button>
+    </md-list-item>
+  </md-list>
+
+</md-content>

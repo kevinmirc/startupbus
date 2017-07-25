@@ -17,7 +17,7 @@
     var ctrl = this;
 
     ctrl.$onInit = function () {
-      console.log(ctrl.people);
+      
     };
   }
 })();

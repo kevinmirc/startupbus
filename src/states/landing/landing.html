@@ -1,6 +1,6 @@
 <md-toolbar layout="row">
   <div class="md-toolbar-tools">
-     <i class="material-icons">blur_on</i> <span>Sample App</span> 
+    <i class="material-icons">directions_bus</i> <span>StartupBus Survival Guide</span>
     <div flex></div>
     <div>
       <md-menu md-position-mode="target-right target">
@@ -8,24 +8,36 @@
           <md-icon>more_vert</md-icon>
         </md-button>
         <md-menu-content width="3">
+          <md-subheader>Select your bus</md-subheader>
           <md-menu-item>
-            <md-button><md-icon md-menu-align-target>location_city</md-icon> Work</md-button>
-          </md-menu-item>
-          <md-menu-item>
-            <md-button><md-icon md-menu-align-target>hotel</md-icon> Home</md-button>
-          </md-menu-item>
-          <md-menu-item>
-            <md-button disabled="true"><md-icon md-menu-align-target>flight</md-icon> Vacation</md-button>
-          </md-menu-item>
-          <md-menu-divider></md-menu-divider>
-          <md-menu-item>
-            <md-button>Log Out</md-button>
+            <md-button><md-icon md-menu-align-target>beach_access</md-icon>Florida</md-button>
           </md-menu-item>
         </md-menu-content>
       </md-menu>
     </div>
   </div>
 </md-toolbar>
-<md-content layout layout-padding>
-  <people people="$ctrl.people"></people>
-</md-content>
+<div layout="row" flex>
+  <md-content layout="column" flex>
+    <div layout flex>
+      <ui-view layout flex></ui-view>
+    </div>
+  </md-content>
+  <md-content layout="column" flex="none" md-whiteframe="2" class="top-index">
+    <div layout="column" layout-align="top center" flex>
+      <md-button class="md-icon-button" ui-sref="schedule">
+        <md-icon>schedule</md-icon>
+      </md-button>
+      <md-button class="md-icon-button" ui-sref="people">
+        <md-icon>people</md-icon>
+      </md-button>
+      <i class="material-icons"></i>
+      <md-button class="md-icon-button" ui-sref="locations">
+        <md-icon>location_city</md-icon>
+      </md-button>
+      <md-button class="md-icon-button" ui-sref="budget">
+        <md-icon>attach_money</md-icon>
+      </md-button>
+    </div>
+  </md-content>
+</div>

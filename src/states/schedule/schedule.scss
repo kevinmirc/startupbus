@@ -1,0 +1,9 @@
+schedule {
+  div {
+    &.md-subheader {
+      position: sticky;
+      top: 48px;
+      z-index: 2;
+    }
+  }
+}

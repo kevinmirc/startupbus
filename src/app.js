@@ -19,11 +19,15 @@ require('angular-ui-router/release/angular-ui-router.js');
   function appConfig($stateProvider) {
     $stateProvider
     .state('landing', {
-      url: '/',
-      template: '<landing people="$ctrl.people"></landing>',
+      url: '',
+      template: '<landing layout="column" flex></landing>',
+    })
+    .state('people', {
+      parent: 'landing',
+      url: '/people',
+      template: '<people people="$resolve.people"></people>',
       resolve: {
         people: function (People) {
-          console.log(People.getAll());
           return People.getAll();
         },
       },
@@ -31,8 +35,38 @@ require('angular-ui-router/release/angular-ui-router.js');
       controller: function (people) {
         var ctrl = this;
         ctrl.people = people;
+      }
+    })
+    .state('schedule', {
+      parent: 'landing',
+      url: '/schedule',
+      template: '<schedule schedule-items="$resolve.scheduleItems" layout="column" flex></schedule>',
+      resolve: {
+        scheduleItems: function (Schedule) {
+          return Schedule.getAll();
+        },
       },
-    });
+      controllerAs: '$ctrl',
+      controller: function (scheduleItems) {
+        var ctrl = this;
+        ctrl.scheduleItems = scheduleItems;
+      }
+    })
+    .state('locations', {
+      parent: 'landing',
+      url: '/locations',
+      template: '<locations locations="$resolve.locations" layout="column" flex></locations>',
+      resolve: {
+        locations: function (Locations) {
+          return Locations.getAll();
+        },
+      },
+      controllerAs: '$ctrl',
+      controller: function (locations) {
+        var ctrl = this;
+        ctrl.locations = locations;
+      }
+    })
   }
 
   function appRun($rootScope) {
@@ -43,5 +77,8 @@ require('angular-ui-router/release/angular-ui-router.js');
 })();
 
 require('./services/people.js');
+require('./services/locations.js');
+require('./services/schedule.js');
 require('./states/landing/landing.js');
+require('./states/schedule/schedule.js');
 require('./components/people/people.js');

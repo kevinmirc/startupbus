@@ -4,9 +4,9 @@ angular.module('sampleApp')
     getAll: function () {
       return $q(function (resolve, reject) {
         resolve([
-          { firstName: 'Kevin', lastName: 'Mircovich', color: '#3DDB93', city: 'St. Petersburg, FL' },
-          { firstName: 'Brian', lastName: 'Mircovich', color: '#E44444', city: 'Palm Harbor, FL' },
-          { firstName: 'Michael', lastName: 'Mircovich', color: '#EF8D2E', city: 'Seatle, WA' },
+          { firstName: 'Kevin', lastName: 'Mircovich', title: 'Conductor', phone: '(727) 678-5785', email: 'kmircovich1@gmail.com', color: '#3DDB93', city: 'St. Petersburg, FL' },
+          { firstName: 'Brent', lastName: 'Henderson', title: 'Conductor', phone: '(727) 434-2130', email: 'bhenderson3690@gmail.com ', color: '#E44444', city: 'Orlando, FL' },
+          { firstName: 'Ray', lastName: 'Land', title: 'Litteral Conductor', color: '#EF8D2E', city: 'Gainsville, FL' },
         ]);
       });
     },
