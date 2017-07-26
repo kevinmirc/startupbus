@@ -6,3 +6,22 @@ md-toolbar {
   min-height: 48px;
   max-height: 48px;
 }
+
+md-list {
+  padding-top: 0px;
+  div.md-subheader {
+    background-color: #ECEFF1 !important;
+  }
+}
+
+md-card-title-media div {
+  .color-padding {
+    padding: 10px;
+  }
+}
+
+md-card {
+  .material-icons {
+    font-size: 18px;
+  }
+}

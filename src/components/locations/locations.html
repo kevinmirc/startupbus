@@ -1,0 +1,22 @@
+<md-content layout="column" flex>
+  <md-subheader>Locations</md-subheader>
+  <div>
+    <md-card ng-repeat="location in $ctrl.locations">
+      <md-card-header>
+        <md-icon>{{location.icon || 'location_on'}}</md-icon>
+        <md-card-header-text>
+          <span class="md-title">{{location.name}}</span>
+          <span class="md-subhead">{{location.address}}</span>
+        </md-card-header-text>
+      </md-card-header>
+      <img ng-if="location.image" ng-src="../../../images/{{location.imageName}}" class="md-card-image" alt="location image">
+
+      <md-card-content>
+        <p>{{location.description}}</p>
+        <p>
+          <a ng-if="location.website" target="_blank" href="{{location.website}}">{{location.website}}</a>
+        </p>
+      </md-card-content>
+    </md-card>
+  </div>
+</md-content>

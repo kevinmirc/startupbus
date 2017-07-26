@@ -12,15 +12,5 @@
         </div>
       </md-list-item>
     </div>
-
-    <md-divider ></md-divider>
-    <md-subheader class="md-no-sticky">Classes</md-subheader>
-    <md-list-item class="md-3-line" ng-repeat="item in items">
-
-      <md-button class="md-secondary md-icon-button" ng-click="doSecondaryAction($event)" ng-if="item.options.actionIcon" aria-label="call">
-        <md-icon md-svg-icon="{{item.options.actionIcon}}"></md-icon>
-      </md-button>
-    </md-list-item>
   </md-list>
-
 </md-content>
