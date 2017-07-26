@@ -80427,6 +80427,14 @@ angular.module('sampleApp')
       return $q(function (resolve, reject) {
         resolve([
           {
+            name: 'The Sail Pavilion',
+            address: '333 S Franklin St, Tampa, FL 33602',
+            website: 'https://www.eventbrite.com/e/2017-startupbus-florida-launch-party-tickets-36468182315',
+            description: 'Pre-Launch party held here! RSVP here:',
+            imageName: 'sail-pavilion',
+            icon: 'local_bar'
+          },
+          {
             name: 'Tampa Convention Center',
             address: '333 S Franklin St, Tampa, FL 33602',
             description: 'This is where we\'ll be departing from on July 31. BE ON TIME!',
@@ -80434,7 +80442,7 @@ angular.module('sampleApp')
             icon: 'location_city'
           },
           {
-            name: 'Hotel in Savanah, GA',
+            name: 'Hotel in Savannah, GA',
             address: 'address tbd',
             description: 'Hotel we\'ll  be staying at in GA',
             imageName: 'tampa-convention-center',
@@ -80492,6 +80500,7 @@ angular.module('sampleApp')
           { firstName: 'Kevin', lastName: 'Mircovich', title: 'Conductor', phone: '(727) 678-5785', email: 'kmircovich1@gmail.com', color: '#3DDB93', city: 'St. Petersburg, FL' },
           { firstName: 'Brent', lastName: 'Henderson', title: 'Conductor', phone: '(727) 434-2130', email: 'bhenderson3690@gmail.com ', color: '#E44444', city: 'Orlando, FL' },
           { firstName: 'Ray', lastName: 'Land', title: 'Literal Conductor', color: '#EF8D2E', city: 'Gainsville, FL' },
+          { firstName: 'Justin', lastName: 'Davis', title: 'Mentor (Day 3)', color: '#89e2ff', city: 'Tampa, FL' },
         ]);
       });
     }
@@ -80509,6 +80518,9 @@ angular.module('sampleApp')
     getAll: function () {
       return $q(function (resolve, reject) {
         resolve({
+          'Pre-Launch (July 29)': [
+            {startTime: '6:30pm EDT', endTime: '8:00pm EDT', description: 'Launch Party', address: '333 S Franklin St, Tampa, FL 33602', locationName: 'Sail Pavilion @ Tampa Convention Center', icon: 'local_bar'},
+          ],
           'Day 1 (July 31)': [
             {startTime: '6:30am EDT', endTime: '7:00am EDT', description: 'Boarding in Tampa', address: '333 S Franklin St, Tampa, FL 33602', locationName: 'Tampa Convention Center'},
             {startTime: '7:00am EDT', endTime: '11:40am EDT', description: 'Drive to Jacksonville', address: null, icon: 'directions_bus'},
@@ -80568,7 +80580,7 @@ angular.module('sampleApp')
           {
             name: 'Hillsborough County',
             website: 'https://www.hillsboroughcounty.org',
-            imageName: 'hc_ed.pdf',
+            image: 'https://s3.amazonaws.com/startupbusfl/hsed.png',
             facebook: {label: 'HillsboroughFL', link: 'https://www.facebook.com/HillsboroughFL/'},
             twitter: {label: '@HillsboroughFL', link: 'https://twitter.com/HillsboroughFL'},
             instagram: {label: 'hillsboroughfl', link: 'https://www.instagram.com/hillsboroughfl/'},
@@ -80576,7 +80588,7 @@ angular.module('sampleApp')
           {
             name: 'Big Sea',
             website: 'https://bigseadesign.com/',
-            imageName: 'bigsea',
+            image: 'https://s3.amazonaws.com/startupbusfl/bigsea.png',
             facebook: {label: 'BigSeaInc', link: 'https://www.facebook.com/BigSeaInc'},
             twitter: {label: '@bigsea', link: 'https://twitter.com/bigsea'},
             instagram: {label: 'bigsea', link: 'https://www.instagram.com/bigsea/'},
@@ -80612,7 +80624,7 @@ exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Rob
 exports.push([module.i, "@import url(https://fonts.googleapis.com/icon?family=Material+Icons);", ""]);
 
 // module
-exports.push([module.i, "md-toolbar {\n  background-color: #41bcc4 !important;\n  min-height: 48px;\n  max-height: 48px; }\n\ndiv.md-subheader {\n  background-color: #ECEFF1 !important;\n  padding-top: 0px; }\n\nmd-list {\n  padding-top: 0px; }\n\nmd-card-title-media div .color-padding {\n  padding: 10px; }\n\nmd-card .material-icons {\n  font-size: 18px; }\n", ""]);
+exports.push([module.i, "md-toolbar {\n  background-color: #41bcc4 !important;\n  min-height: 48px;\n  max-height: 48px; }\n\ndiv.md-subheader {\n  background-color: #ECEFF1 !important;\n  padding-top: 0px; }\n\nmd-list {\n  padding-top: 0px; }\n\nmd-card-title-media div .color-padding {\n  padding: 10px; }\n\nmd-card .material-icons {\n  font-size: 18px; }\n\nmd-card img {\n  max-width: 360px; }\n", ""]);
 
 // exports
 
@@ -80705,7 +80717,7 @@ exports.push([module.i, "", ""]);
 /* 28 */
 /***/ (function(module, exports) {
 
-module.exports = "<md-content layout=\"column\" flex>\n  <md-subheader>\n    Other Info\n  </md-subheader>\n  <div layout=\"column\" layout-padding>\n    <h2>Channel of Communication</h2>\n    <p>tdb (possible group chat or slack)</p>\n    \n    <h2>Code of Conduct</h2>\n    <p><a href=\"https://northamerica.startupbus.com/legal/code_of_conduct.html\">https://northamerica.startupbus.com/legal/code_of_conduct.html</a></p>\n\n    <h2>StartupBus FAQ</h2>\n    <p><a href=\"https://northamerica.startupbus.com/faq.html\">https://northamerica.startupbus.com/faq.html</a></p>\n  </div>\n</md-content>\n";
+module.exports = "<md-content layout=\"column\" flex>\n  <md-subheader>\n    Other Info\n  </md-subheader>\n  <div layout=\"column\" layout-padding>\n    <h2>StartupBus Launch Party</h2>\n    <p>\n      <a href=\"https://www.eventbrite.com/e/2017-startupbus-florida-launch-party-tickets-36468182315\">\n        https://www.eventbrite.com/e/2017-startupbus-florida-launch-party-tickets-36468182315\n      </a>\n    </p>\n    <h2>Channel of Communication</h2>\n    <p>tdb (possible group chat or slack)</p>\n\n    <h2>Code of Conduct</h2>\n    <p><a href=\"https://northamerica.startupbus.com/legal/code_of_conduct.html\">https://northamerica.startupbus.com/legal/code_of_conduct.html</a></p>\n\n    <h2>StartupBus FAQ</h2>\n    <p><a href=\"https://northamerica.startupbus.com/faq.html\">https://northamerica.startupbus.com/faq.html</a></p>\n  </div>\n</md-content>\n";
 
 /***/ }),
 /* 29 */
@@ -80735,7 +80747,7 @@ module.exports = "<md-content layout=\"column\" flex>\n  <md-list class=\"md-den
 /* 33 */
 /***/ (function(module, exports) {
 
-module.exports = "<md-content layout=\"column\" flex>\n  <md-subheader>Sponsors</md-subheader>\n  <div>\n    <md-card ng-repeat=\"sponsor in $ctrl.sponsors\">\n      <!-- <img ng-if=\"sponsor.imageName\" ng-src=\"../images/{{sponsor.imageName}}\" class=\"md-card-image\" alt=\"sponsor image\"> -->\n      <md-card-title>\n        <md-card-title-text>\n          <span class=\"md-headline\">{{sponsor.name}}</span>\n        </md-card-title-text>\n      </md-card-title>\n      <md-card-content>\n        <p>Facebook: <a href=\"{{sponsor.facebook.link}}\">{{sponsor.facebook.label}}</a></p>\n        <p>Twitter: <a href=\"{{sponsor.twitter.link}}\">{{sponsor.twitter.label}}</a></p>\n        <p>Instagram: <a href=\"{{sponsor.instagram.link}}\">{{sponsor.instagram.label}}</a></p>\n        <p>Website: <a href=\"{{sponsor.website}}\">{{sponsor.website}}</a></p>\n      </md-card-content>\n    </md-card>\n  </div>\n</md-content>\n";
+module.exports = "<md-content layout=\"column\" flex>\n  <md-subheader>Sponsors</md-subheader>\n  <div>\n    <md-card ng-repeat=\"sponsor in $ctrl.sponsors\">\n      <img ng-if=\"sponsor.image\" ng-src=\"{{sponsor.image}}\" class=\"md-card-image\" alt=\"sponsor image\">\n      <md-card-title>\n        <md-card-title-text>\n          <span class=\"md-headline\">{{sponsor.name}}</span>\n        </md-card-title-text>\n      </md-card-title>\n      <md-card-content>\n        <p>Facebook: <a href=\"{{sponsor.facebook.link}}\">{{sponsor.facebook.label}}</a></p>\n        <p>Twitter: <a href=\"{{sponsor.twitter.link}}\">{{sponsor.twitter.label}}</a></p>\n        <p>Instagram: <a href=\"{{sponsor.instagram.link}}\">{{sponsor.instagram.label}}</a></p>\n        <p>Website: <a href=\"{{sponsor.website}}\">{{sponsor.website}}</a></p>\n      </md-card-content>\n    </md-card>\n  </div>\n</md-content>\n";
 
 /***/ }),
 /* 34 */
