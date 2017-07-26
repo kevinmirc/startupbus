@@ -3,7 +3,24 @@
 <head>
   <title>StartupBus</title>
 </head>
-<body ng-app="sampleApp">
+<body ng-app="sampleApp" ng-cloak layout="column">
+  <md-toolbar>
+    <div class="md-toolbar-tools">
+      <h1> StartupBus Survival Guide</h1>
+      <div flex></div>
+      <md-menu md-position-mode="target-right target">
+        <md-button md-menu-origin aria-label="Open menu" class="md-icon-button" ng-click="$mdMenu.open()">
+          <md-icon>directions_bus</md-icon>
+        </md-button>
+        <md-menu-content width="3">
+          <md-subheader>Select your bus</md-subheader>
+          <md-menu-item>
+            <md-button><md-icon md-menu-align-target>beach_access</md-icon>Florida</md-button>
+          </md-menu-item>
+        </md-menu-content>
+      </md-menu>
+    </div>
+  </md-toolbar>
 
   <ui-view layout flex></ui-view>
 

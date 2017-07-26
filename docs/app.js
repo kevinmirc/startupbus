@@ -80475,7 +80475,7 @@ exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Rob
 exports.push([module.i, "@import url(https://fonts.googleapis.com/icon?family=Material+Icons);", ""]);
 
 // module
-exports.push([module.i, "\n", ""]);
+exports.push([module.i, "md-toolbar {\n  background-color: #41bcc4 !important;\n  min-height: 48px;\n  max-height: 48px; }\n", ""]);
 
 // exports
 
@@ -80503,7 +80503,7 @@ exports = module.exports = __webpack_require__(0)();
 
 
 // module
-exports.push([module.i, "landing md-toolbar {\n  background: #41bcc4; }\n  landing md-toolbar div.md-toolbar-tools {\n    background: #41bcc4; }\n\nlanding span {\n  padding-left: 10px; }\n\nlanding .top-index {\n  z-index: 99; }\n", ""]);
+exports.push([module.i, "landing .top-index {\n  z-index: 3; }\n", ""]);
 
 // exports
 
@@ -80526,13 +80526,13 @@ exports.push([module.i, "schedule div.md-subheader {\n  position: sticky;\n  top
 /* 21 */
 /***/ (function(module, exports) {
 
-module.exports = "<md-subheader>\n  Personel\n</md-subheader>\n<div layout=\"column\">\n  <md-card ng-repeat=\"person in $ctrl.people\">\n    <md-card-title>\n      <md-card-title-text>\n        <span class=\"md-headline\">{{person.firstName}} {{person.lastName}}</span>\n        <span class=\"md-subhead\">{{person.title}}</span>\n        <span class=\"md-subhead\" ng-if=\"person.city\"><md-icon ng-style=\"{'color': person.color}\">location_on</md-icon> {{person.city}}</span>\n        <span class=\"md-subhead\" ng-if=\"person.phone\"><md-icon ng-style=\"{'color': person.color}\">phone</md-icon>{{person.phone}}</span>\n        <span class=\"md-subhead\" ng-if=\"person.email\"><md-icon ng-style=\"{'color': person.color}\">email</md-icon> {{person.email}}</span>\n      </md-card-title-text>\n      <md-card-title-media layout-padding>\n        <md-icon ng-style=\"{'color': person.color}\">location</md-icon>\n      </md-card-title-media>\n    </md-card-title>\n  </md-card>\n</div>\n";
+module.exports = "<md-content layout=\"column\" flex>\n  <md-subheader>\n    Personel\n  </md-subheader>\n  <div>\n    <md-card ng-repeat=\"person in $ctrl.people\">\n      <md-card-title>\n        <md-card-title-text>\n          <span class=\"md-headline\">{{person.firstName}} {{person.lastName}}</span>\n          <span class=\"md-subhead\">{{person.title}}</span>\n          <span class=\"md-subhead\" ng-if=\"person.city\"><md-icon ng-style=\"{'color': person.color}\">location_on</md-icon> {{person.city}}</span>\n          <span class=\"md-subhead\" ng-if=\"person.phone\"><md-icon ng-style=\"{'color': person.color}\">phone</md-icon>{{person.phone}}</span>\n          <span class=\"md-subhead\" ng-if=\"person.email\"><md-icon ng-style=\"{'color': person.color}\">email</md-icon> {{person.email}}</span>\n        </md-card-title-text>\n        <md-card-title-media layout-padding>\n          <md-icon ng-style=\"{'color': person.color}\">location</md-icon>\n        </md-card-title-media>\n      </md-card-title>\n    </md-card>\n  </div>\n</md-content>\n";
 
 /***/ }),
 /* 22 */
 /***/ (function(module, exports) {
 
-module.exports = "<md-toolbar layout flex>\n  <div class=\"md-toolbar-tools\">\n    <div flex>\n      <i class=\"material-icons\">directions_bus</i> <span>StartupBus Survival Guide</span>\n    </div>\n    <div flex></div>\n    <div flex>\n      <md-menu md-position-mode=\"target-right target\">\n        <md-button md-menu-origin aria-label=\"Open menu\" class=\"md-icon-button\" ng-click=\"$mdMenu.open()\">\n          <md-icon>more_vert</md-icon>\n        </md-button>\n        <md-menu-content width=\"3\">\n          <md-subheader>Select your bus</md-subheader>\n          <md-menu-item>\n            <md-button><md-icon md-menu-align-target>beach_access</md-icon>Florida</md-button>\n          </md-menu-item>\n        </md-menu-content>\n      </md-menu>\n    </div>\n  </div>\n</md-toolbar>\n<div layout=\"row\" flex>\n  <!-- <md-content layout flex> -->\n    <!-- <div layout flex> -->\n      <ui-view layout flex></ui-view>\n    <!-- </div> -->\n  <!-- </md-content> -->\n  <!-- <md-content layout md-whiteframe=\"2\" class=\"top-index\" flex=\"5\">\n    <div layout=\"column\" layout-align=\"top center\" flex>\n      <md-button class=\"md-icon-button\" ui-sref=\"schedule\">\n        <md-icon>schedule</md-icon>\n      </md-button>\n      <md-button class=\"md-icon-button\" ui-sref=\"people\">\n        <md-icon>people</md-icon>\n      </md-button>\n      <i class=\"material-icons\"></i>\n      <md-button class=\"md-icon-button\" ui-sref=\"locations\">\n        <md-icon>location_city</md-icon>\n      </md-button>\n      <md-button class=\"md-icon-button\" ui-sref=\"budget\">\n        <md-icon>attach_money</md-icon>\n      </md-button>\n    </div>\n  </md-content> -->\n</div>\n";
+module.exports = "<ui-view layout flex></ui-view>\n\n<div layout=\"column\" layout-align=\"top center\" md-whiteframe=\"2\" class=\"top-index\">\n  <md-button class=\"md-icon-button\" ui-sref=\"schedule\">\n    <md-icon>schedule</md-icon>\n  </md-button>\n  <md-button class=\"md-icon-button\" ui-sref=\"people\">\n    <md-icon>people</md-icon>\n  </md-button>\n  <i class=\"material-icons\"></i>\n  <md-button class=\"md-icon-button\" ui-sref=\"locations\">\n    <md-icon>location_city</md-icon>\n  </md-button>\n  <md-button class=\"md-icon-button\" ui-sref=\"budget\">\n    <md-icon>attach_money</md-icon>\n  </md-button>\n</div>\n";
 
 /***/ }),
 /* 23 */
@@ -80644,12 +80644,12 @@ __webpack_require__(6);
     $stateProvider
     .state('landing', {
       url: '',
-      template: '<landing layout="column" flex></landing>',
+      template: '<landing layout flex></landing>',
     })
     .state('people', {
       parent: 'landing',
       url: '/people',
-      template: '<people people="$resolve.people"></people>',
+      template: '<people people="$resolve.people" layout flex></people>',
       resolve: {
         people: function (People) {
           return People.getAll();
