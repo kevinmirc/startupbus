@@ -80370,15 +80370,15 @@ angular.module('sampleApp')
             {startTime: '11:00pm EDT', endTime: '11:30pm EDT', description: 'Hotel Checkin', address: '177 1st Ave N. Nashville, TN 37201', locationName: 'Nashville Downtown Hostel', icon: 'local_hotel'},
           ],
           'Day 3 (August 2)': [
-            {startTime: null, endTime: null, description: 'Hotel Checkout & Boarding', address: '177 1st Ave N. Nashville, TN 37201', locationName: 'Nashville Downtown Hostel', icon: 'local_hotel'},
-            {startTime: null, endTime: null, description: 'Boarding', address: null},
-            {startTime: null, endTime: null, description: 'Boarding', address: null},
-            {startTime: null, endTime: null, description: 'Drive to Birmingham', address: null, icon: 'directions_bus'},
-            {startTime: null, endTime: null, description: 'Boarding', address: null, icon: 'directions_bus'},
-            {startTime: null, endTime: null, description: 'Drive to Meridian', address: null, icon: 'directions_bus'},
-            {startTime: null, endTime: null, description: 'Boarding', address: null},
-            {startTime: null, endTime: null, description: 'Drive to New Orleans', address: null, icon: 'directions_bus'},
-            {startTime: null, endTime: null, description: 'Hotel Checkin', address: '2001 St Charles Ave New Orleans, LA 70130', locationName: 'Clarion Hotel Grand Boutique', icon: 'local_hotel'},
+            {startTime: 'time tbd', endTime: 'time tbd', description: 'Hotel Checkout & Boarding', address: '177 1st Ave N. Nashville, TN 37201', locationName: 'Nashville Downtown Hostel', icon: 'local_hotel'},
+            {startTime: 'time tbd', endTime: 'time tbd', description: 'Boarding', address: null},
+            {startTime: 'time tbd', endTime: 'time tbd', description: 'Boarding', address: null},
+            {startTime: 'time tbd', endTime: 'time tbd', description: 'Drive to Birmingham', address: null, icon: 'directions_bus'},
+            {startTime: 'time tbd', endTime: 'time tbd', description: 'Boarding', address: null, icon: 'directions_bus'},
+            {startTime: 'time tbd', endTime: 'time tbd', description: 'Drive to Meridian', address: null, icon: 'directions_bus'},
+            {startTime: 'time tbd', endTime: 'time tbd', description: 'Boarding', address: null},
+            {startTime: 'time tbd', endTime: 'time tbd', description: 'Drive to New Orleans', address: null, icon: 'directions_bus'},
+            {startTime: 'time tbd', endTime: 'time tbd', description: 'Hotel Checkin', address: '2001 St Charles Ave New Orleans, LA 70130', locationName: 'Clarion Hotel Grand Boutique', icon: 'local_hotel'},
           ],
           'Day 4 (August 3)': [
             {startTime: '7:00am CDT', endTime: '6:00pm CDT', description: 'StartupBus North America Finals', address: null, icon: 'whatshot'},
@@ -80538,7 +80538,7 @@ module.exports = "<ui-view layout flex></ui-view>\n\n<div layout=\"column\" layo
 /* 23 */
 /***/ (function(module, exports) {
 
-module.exports = "<!-- <md-subheader>Schedule</md-subheader> -->\n<md-content layout=\"column\" flex>\n  <md-list class=\"md-dense\" flex>\n    <div ng-repeat=\"(day, items) in $ctrl.scheduleItems\">\n      <md-subheader>{{day}}</md-subheader>\n      <md-list-item class=\"md-3-line\" ng-repeat=\"item in items\">\n        <md-icon ng-if=\"item.icon\">{{item.icon}}</md-icon>\n        <div class=\"md-list-item-text\">\n          <h3> {{ item.description }} </h3>\n          <p>{{item.startTime}} - {{item.endTime}}</p>\n          <p ng-if=\"item.locationName\">{{item.locationName}}</p>\n          <p ng-if=\"item.address\">{{item.address}}</p>\n        </div>\n      </md-list-item>\n    </div>\n\n    <md-divider ></md-divider>\n    <md-subheader class=\"md-no-sticky\">Classes</md-subheader>\n    <md-list-item class=\"md-3-line\" ng-repeat=\"item in items\">\n\n      <md-button class=\"md-secondary md-icon-button\" ng-click=\"doSecondaryAction($event)\" ng-if=\"item.options.actionIcon\" aria-label=\"call\">\n        <md-icon md-svg-icon=\"{{item.options.actionIcon}}\"></md-icon>\n      </md-button>\n    </md-list-item>\n  </md-list>\n\n</md-content>\n";
+module.exports = "<md-content layout=\"column\" flex>\n  <md-list class=\"md-dense\" flex>\n    <div ng-repeat=\"(day, items) in $ctrl.scheduleItems\">\n      <md-subheader>{{day}}</md-subheader>\n      <md-list-item class=\"md-3-line\" ng-repeat=\"item in items\">\n        <md-icon ng-if=\"item.icon\">{{item.icon}}</md-icon>\n        <div class=\"md-list-item-text\">\n          <h3> {{ item.description }} </h3>\n          <p>{{item.startTime}} - {{item.endTime}}</p>\n          <p ng-if=\"item.locationName\">{{item.locationName}}</p>\n          <p ng-if=\"item.address\">{{item.address}}</p>\n        </div>\n      </md-list-item>\n    </div>\n\n    <md-divider ></md-divider>\n    <md-subheader class=\"md-no-sticky\">Classes</md-subheader>\n    <md-list-item class=\"md-3-line\" ng-repeat=\"item in items\">\n\n      <md-button class=\"md-secondary md-icon-button\" ng-click=\"doSecondaryAction($event)\" ng-if=\"item.options.actionIcon\" aria-label=\"call\">\n        <md-icon md-svg-icon=\"{{item.options.actionIcon}}\"></md-icon>\n      </md-button>\n    </md-list-item>\n  </md-list>\n\n</md-content>\n";
 
 /***/ }),
 /* 24 */
