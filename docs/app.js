@@ -80430,41 +80430,47 @@ angular.module('sampleApp')
             name: 'Tampa Convention Center',
             address: '333 S Franklin St, Tampa, FL 33602',
             description: 'This is where we\'ll be departing from on July 31. BE ON TIME!',
-            imageName: 'tampa-convention-center'
+            imageName: 'tampa-convention-center',
+            icon: 'location_city'
           },
           {
-            name: 'Hotel in Columbia, SC',
-            address: '',
-            description: 'Hotel we\'ll  be staying at in Columbia, SC',
-            imageName: 'tampa-convention-center'
+            name: 'Hotel in Savanah, GA',
+            address: 'address tbd',
+            description: 'Hotel we\'ll  be staying at in GA',
+            imageName: 'tampa-convention-center',
+            icon: 'local_hotel'
           },
           {
             name: 'Advent Coworking',
             website: 'https://adventcoworking.com/',
             address: '933 Louise Ave #101, Charlotte, NC 28204',
             description: 'Advent Coworking will host us for breakfast/lunch and offer their space to work at.',
-            imageName: 'advent'
+            imageName: '',
+            icon: 'pin_drop'
           },
           {
             name: 'Catawba Brewing Company',
             website: 'catawbabrewing.com',
             address: '212 S Green St, Morganton, NC 28655',
             description: 'Always be Pitching!',
-            imageName: 'catawba'
+            imageName: 'catawba',
+            icon: 'local_bar'
           },
           {
             name: 'Nashville Downtown Hostel',
             website: 'https://www.nashvilledowntownhostel.com',
             address: '177 1st Ave N, Nashville, TN 37201',
             description: 'We\'ll spend night number two at this amazing hostel.',
-            imageName: 'catawba'
+            imageName: 'catawba',
+            icon: 'local_hotel'
           },
           {
             name: 'Clarion Hotel Grand Boutique',
             website: 'https://www.choicehotels.com/louisiana/new-orleans/clarion-hotels/la087',
             address: '2001 St Charles Ave New Orleans, LA 70130',
             description: 'All of StartupBus North America at one location!',
-            imageName: 'clarion'
+            imageName: 'clarion',
+            icon: 'local_hotel'
           },
         ]);
       });
@@ -80485,10 +80491,10 @@ angular.module('sampleApp')
         resolve([
           { firstName: 'Kevin', lastName: 'Mircovich', title: 'Conductor', phone: '(727) 678-5785', email: 'kmircovich1@gmail.com', color: '#3DDB93', city: 'St. Petersburg, FL' },
           { firstName: 'Brent', lastName: 'Henderson', title: 'Conductor', phone: '(727) 434-2130', email: 'bhenderson3690@gmail.com ', color: '#E44444', city: 'Orlando, FL' },
-          { firstName: 'Ray', lastName: 'Land', title: 'Litteral Conductor', color: '#EF8D2E', city: 'Gainsville, FL' },
+          { firstName: 'Ray', lastName: 'Land', title: 'Literal Conductor', color: '#EF8D2E', city: 'Gainsville, FL' },
         ]);
       });
-    },
+    }
   };
 });
 
@@ -80699,13 +80705,13 @@ exports.push([module.i, "", ""]);
 /* 28 */
 /***/ (function(module, exports) {
 
-module.exports = "<md-content layout=\"column\" flex>\n  <md-subheader>\n    Other Info\n  </md-subheader>\n  <div layout=\"column\" layout-padding>\n    <h2>Code of Conduct</h2>\n    <p><a href=\"https://northamerica.startupbus.com/legal/code_of_conduct.html\">https://northamerica.startupbus.com/legal/code_of_conduct.html</a></p>\n\n    <h2>StartupBus FAQ</h2>\n    <p><a href=\"https://northamerica.startupbus.com/faq.html\">https://northamerica.startupbus.com/faq.html</a></p>\n  </div>\n</md-content>\n";
+module.exports = "<md-content layout=\"column\" flex>\n  <md-subheader>\n    Other Info\n  </md-subheader>\n  <div layout=\"column\" layout-padding>\n    <h2>Channel of Communication</h2>\n    <p>tdb (possible group chat or slack)</p>\n    \n    <h2>Code of Conduct</h2>\n    <p><a href=\"https://northamerica.startupbus.com/legal/code_of_conduct.html\">https://northamerica.startupbus.com/legal/code_of_conduct.html</a></p>\n\n    <h2>StartupBus FAQ</h2>\n    <p><a href=\"https://northamerica.startupbus.com/faq.html\">https://northamerica.startupbus.com/faq.html</a></p>\n  </div>\n</md-content>\n";
 
 /***/ }),
 /* 29 */
 /***/ (function(module, exports) {
 
-module.exports = "<ui-view layout flex></ui-view>\n\n<div layout=\"column\" layout-align=\"top center\" md-whiteframe=\"2\" class=\"top-index\">\n  <md-button class=\"md-icon-button\" ui-sref=\"schedule\">\n    <md-icon>schedule</md-icon>\n  </md-button>\n  <md-button class=\"md-icon-button\" ui-sref=\"people\">\n    <md-icon>people</md-icon>\n  </md-button>\n  <i class=\"material-icons\"></i>\n  <md-button class=\"md-icon-button\" ui-sref=\"locations\">\n    <md-icon>location_city</md-icon>\n  </md-button>\n  <md-button class=\"md-icon-button\" ui-sref=\"sponsors\">\n    <md-icon>favorite</md-icon>\n  </md-button>\n  <md-button class=\"md-icon-button\" ui-sref=\"info\">\n    <md-icon>info</md-icon>\n  </md-button>\n</div>\n";
+module.exports = "<ui-view layout flex></ui-view>\n\n<div layout=\"column\" layout-align=\"top center\" md-whiteframe=\"2\" class=\"top-index\">\n  <md-button class=\"md-icon-button\" ui-sref=\"schedule\">\n    <md-icon>schedule</md-icon>\n  </md-button>\n  <md-button class=\"md-icon-button\" ui-sref=\"people\">\n    <md-icon>people</md-icon>\n  </md-button>\n  <i class=\"material-icons\"></i>\n  <md-button class=\"md-icon-button\" ui-sref=\"locations\">\n    <md-icon>location_on</md-icon>\n  </md-button>\n  <md-button class=\"md-icon-button\" ui-sref=\"sponsors\">\n    <md-icon>favorite</md-icon>\n  </md-button>\n  <md-button class=\"md-icon-button\" ui-sref=\"info\">\n    <md-icon>info</md-icon>\n  </md-button>\n</div>\n";
 
 /***/ }),
 /* 30 */
