@@ -5,6 +5,14 @@ angular.module('sampleApp')
       return $q(function (resolve, reject) {
         resolve([
           {
+            name: 'The Sail Pavilion',
+            address: '333 S Franklin St, Tampa, FL 33602',
+            website: 'https://www.eventbrite.com/e/2017-startupbus-florida-launch-party-tickets-36468182315',
+            description: 'Pre-Launch party held here! RSVP here:',
+            imageName: 'sail-pavilion',
+            icon: 'local_bar'
+          },
+          {
             name: 'Tampa Convention Center',
             address: '333 S Franklin St, Tampa, FL 33602',
             description: 'This is where we\'ll be departing from on July 31. BE ON TIME!',
