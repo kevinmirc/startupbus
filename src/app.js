@@ -20,12 +20,12 @@ require('angular-ui-router/release/angular-ui-router.js');
     $stateProvider
     .state('landing', {
       url: '',
-      template: '<landing layout="column" flex></landing>',
+      template: '<landing layout flex></landing>',
     })
     .state('people', {
       parent: 'landing',
       url: '/people',
-      template: '<people people="$resolve.people"></people>',
+      template: '<people people="$resolve.people" layout flex></people>',
       resolve: {
         people: function (People) {
           return People.getAll();

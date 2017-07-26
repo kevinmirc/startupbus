@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm run build && webpack-dev-server --content-base dist",
+    "start": "npm run build && webpack-dev-server --content-base docs",
     "build": "webpack"
   },
   "author": "",

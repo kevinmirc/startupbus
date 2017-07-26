@@ -63,78 +63,6 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
-/******/ })
-/************************************************************************/
-/******/ ([
-/* 0 */
-/***/ (function(module, exports) {
-
-/******/ (function(modules) { // webpackBootstrap
-/******/ 	// The module cache
-/******/ 	var installedModules = {};
-/******/
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/
-/******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId]) {
-/******/ 			return installedModules[moduleId].exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = installedModules[moduleId] = {
-/******/ 			i: moduleId,
-/******/ 			l: false,
-/******/ 			exports: {}
-/******/ 		};
-/******/
-/******/ 		// Execute the module function
-/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-/******/
-/******/ 		// Flag the module as loaded
-/******/ 		module.l = true;
-/******/
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
-/******/
-/******/
-/******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	__webpack_require__.m = modules;
-/******/
-/******/ 	// expose the module cache
-/******/ 	__webpack_require__.c = installedModules;
-/******/
-/******/ 	// identity function for calling harmony imports with the correct context
-/******/ 	__webpack_require__.i = function(value) { return value; };
-/******/
-/******/ 	// define getter function for harmony exports
-/******/ 	__webpack_require__.d = function(exports, name, getter) {
-/******/ 		if(!__webpack_require__.o(exports, name)) {
-/******/ 			Object.defineProperty(exports, name, {
-/******/ 				configurable: false,
-/******/ 				enumerable: true,
-/******/ 				get: getter
-/******/ 			});
-/******/ 		}
-/******/ 	};
-/******/
-/******/ 	// getDefaultExport function for compatibility with non-harmony modules
-/******/ 	__webpack_require__.n = function(module) {
-/******/ 		var getter = module && module.__esModule ?
-/******/ 			function getDefault() { return module['default']; } :
-/******/ 			function getModuleExports() { return module; };
-/******/ 		__webpack_require__.d(getter, 'a', getter);
-/******/ 		return getter;
-/******/ 	};
-/******/
-/******/ 	// Object.prototype.hasOwnProperty.call
-/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
-/******/
-/******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
-/******/
-/******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(__webpack_require__.s = 27);
 /******/ })
 /************************************************************************/
@@ -80547,7 +80475,7 @@ exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Rob
 exports.push([module.i, "@import url(https://fonts.googleapis.com/icon?family=Material+Icons);", ""]);
 
 // module
-exports.push([module.i, "md-toolbar {\n  height: 48px;\n  min-height: 48px;\n  max-height: 48px; }\n  md-toolbar .md-toolbar-tools {\n    min-height: 48px;\n    max-height: 48px;\n    height: 48px; }\n", ""]);
+exports.push([module.i, "\n", ""]);
 
 // exports
 
@@ -80575,7 +80503,7 @@ exports = module.exports = __webpack_require__(0)();
 
 
 // module
-exports.push([module.i, "landing md-toolbar div.md-toolbar-tools {\n  background: #41bcc4; }\n\nlanding span {\n  padding-left: 10px; }\n\nlanding .top-index {\n  z-index: 99; }\n", ""]);
+exports.push([module.i, "landing md-toolbar {\n  background: #41bcc4; }\n  landing md-toolbar div.md-toolbar-tools {\n    background: #41bcc4; }\n\nlanding span {\n  padding-left: 10px; }\n\nlanding .top-index {\n  z-index: 99; }\n", ""]);
 
 // exports
 
@@ -80604,7 +80532,7 @@ module.exports = "<md-subheader>\n  Personel\n</md-subheader>\n<div layout=\"col
 /* 22 */
 /***/ (function(module, exports) {
 
-module.exports = "<md-toolbar layout=\"row\">\n  <div class=\"md-toolbar-tools\">\n    <i class=\"material-icons\">directions_bus</i> <span>StartupBus Survival Guide</span>\n    <div flex></div>\n    <div>\n      <md-menu md-position-mode=\"target-right target\">\n        <md-button md-menu-origin aria-label=\"Open menu\" class=\"md-icon-button\" ng-click=\"$mdMenu.open()\">\n          <md-icon>more_vert</md-icon>\n        </md-button>\n        <md-menu-content width=\"3\">\n          <md-subheader>Select your bus</md-subheader>\n          <md-menu-item>\n            <md-button><md-icon md-menu-align-target>beach_access</md-icon>Florida</md-button>\n          </md-menu-item>\n        </md-menu-content>\n      </md-menu>\n    </div>\n  </div>\n</md-toolbar>\n<div layout=\"row\" flex>\n  <md-content layout=\"column\" flex>\n    <div layout flex>\n      <ui-view layout flex></ui-view>\n    </div>\n  </md-content>\n  <md-content layout=\"column\" flex=\"none\" md-whiteframe=\"2\" class=\"top-index\">\n    <div layout=\"column\" layout-align=\"top center\" flex>\n      <md-button class=\"md-icon-button\" ui-sref=\"schedule\">\n        <md-icon>schedule</md-icon>\n      </md-button>\n      <md-button class=\"md-icon-button\" ui-sref=\"people\">\n        <md-icon>people</md-icon>\n      </md-button>\n      <i class=\"material-icons\"></i>\n      <md-button class=\"md-icon-button\" ui-sref=\"locations\">\n        <md-icon>location_city</md-icon>\n      </md-button>\n      <md-button class=\"md-icon-button\" ui-sref=\"budget\">\n        <md-icon>attach_money</md-icon>\n      </md-button>\n    </div>\n  </md-content>\n</div>\n";
+module.exports = "<md-toolbar layout flex>\n  <div class=\"md-toolbar-tools\">\n    <div flex>\n      <i class=\"material-icons\">directions_bus</i> <span>StartupBus Survival Guide</span>\n    </div>\n    <div flex></div>\n    <div flex>\n      <md-menu md-position-mode=\"target-right target\">\n        <md-button md-menu-origin aria-label=\"Open menu\" class=\"md-icon-button\" ng-click=\"$mdMenu.open()\">\n          <md-icon>more_vert</md-icon>\n        </md-button>\n        <md-menu-content width=\"3\">\n          <md-subheader>Select your bus</md-subheader>\n          <md-menu-item>\n            <md-button><md-icon md-menu-align-target>beach_access</md-icon>Florida</md-button>\n          </md-menu-item>\n        </md-menu-content>\n      </md-menu>\n    </div>\n  </div>\n</md-toolbar>\n<div layout=\"row\" flex>\n  <!-- <md-content layout flex> -->\n    <!-- <div layout flex> -->\n      <ui-view layout flex></ui-view>\n    <!-- </div> -->\n  <!-- </md-content> -->\n  <!-- <md-content layout md-whiteframe=\"2\" class=\"top-index\" flex=\"5\">\n    <div layout=\"column\" layout-align=\"top center\" flex>\n      <md-button class=\"md-icon-button\" ui-sref=\"schedule\">\n        <md-icon>schedule</md-icon>\n      </md-button>\n      <md-button class=\"md-icon-button\" ui-sref=\"people\">\n        <md-icon>people</md-icon>\n      </md-button>\n      <i class=\"material-icons\"></i>\n      <md-button class=\"md-icon-button\" ui-sref=\"locations\">\n        <md-icon>location_city</md-icon>\n      </md-button>\n      <md-button class=\"md-icon-button\" ui-sref=\"budget\">\n        <md-icon>attach_money</md-icon>\n      </md-button>\n    </div>\n  </md-content> -->\n</div>\n";
 
 /***/ }),
 /* 23 */
@@ -80779,9 +80707,6 @@ __webpack_require__(14);
 __webpack_require__(15);
 __webpack_require__(10);
 
-
-/***/ })
-/******/ ]);
 
 /***/ })
 /******/ ]);
