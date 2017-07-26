@@ -82,6 +82,11 @@ require('angular-ui-router/release/angular-ui-router.js');
         ctrl.sponsors = sponsors;
       }
     })
+    .state('info', {
+      parent: 'landing',
+      url: '/info',
+      template: '<info layout="column" flex></info>',
+    })
   }
 
   function appRun($rootScope) {
@@ -100,3 +105,4 @@ require('./components/schedule/schedule.js');
 require('./components/people/people.js');
 require('./components/locations/locations.js');
 require('./components/sponsors/sponsors.js');
+require('./components/info/info.js');
