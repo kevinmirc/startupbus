@@ -80612,7 +80612,7 @@ exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Rob
 exports.push([module.i, "@import url(https://fonts.googleapis.com/icon?family=Material+Icons);", ""]);
 
 // module
-exports.push([module.i, "md-toolbar {\n  background-color: #41bcc4 !important;\n  min-height: 48px;\n  max-height: 48px; }\n\nmd-list {\n  padding-top: 0px; }\n  md-list div.md-subheader {\n    background-color: #ECEFF1 !important; }\n\nmd-card-title-media div .color-padding {\n  padding: 10px; }\n\nmd-card .material-icons {\n  font-size: 18px; }\n", ""]);
+exports.push([module.i, "md-toolbar {\n  background-color: #41bcc4 !important;\n  min-height: 48px;\n  max-height: 48px; }\n\ndiv.md-subheader {\n  background-color: #ECEFF1 !important;\n  padding-top: 0px; }\n\nmd-list {\n  padding-top: 0px; }\n\nmd-card-title-media div .color-padding {\n  padding: 10px; }\n\nmd-card .material-icons {\n  font-size: 18px; }\n", ""]);
 
 // exports
 
