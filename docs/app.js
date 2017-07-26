@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 36);
+/******/ 	return __webpack_require__(__webpack_require__.s = 40);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -80231,7 +80231,7 @@ $provide.value("$locale", {
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(19);
+var content = __webpack_require__(20);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
 var update = __webpack_require__(1)(content, {});
@@ -80257,7 +80257,7 @@ if(false) {
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(20);
+var content = __webpack_require__(21);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
 var update = __webpack_require__(1)(content, {});
@@ -80280,10 +80280,29 @@ if(false) {
 /* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
+__webpack_require__(34);
+
+angular.module('sampleApp')
+  .component('info', {
+    bindings: {},
+    template: __webpack_require__(28),
+    controller: function () {
+      var ctrl = this;
+
+      ctrl.$onInit = function () {
+      };
+    }
+  });
+
+
+/***/ }),
+/* 11 */
+/***/ (function(module, exports, __webpack_require__) {
+
 (function () {
   'use strict';
 
-  __webpack_require__(31);
+  __webpack_require__(35);
 
   module.exports = angular
     .module('sampleApp')
@@ -80291,7 +80310,7 @@ if(false) {
       bindings: {
         people: '<'
       },
-      template: __webpack_require__(26),
+      template: __webpack_require__(29),
       controller: landingController,
     });
 
@@ -80306,38 +80325,17 @@ if(false) {
 
 
 /***/ }),
-/* 11 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(32);
+__webpack_require__(36);
 
 angular.module('sampleApp')
   .component('locations', {
     bindings: {
       locations: '<'
     },
-    template: __webpack_require__(27),
-    controller: function () {
-      var ctrl = this;
-
-      ctrl.$onInit = function () {
-      };
-    }
-  });
-
-
-/***/ }),
-/* 12 */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(33);
-
-angular.module('sampleApp')
-  .component('people', {
-    bindings: {
-      people: '<'
-    },
-    template: __webpack_require__(28),
+    template: __webpack_require__(30),
     controller: function () {
       var ctrl = this;
 
@@ -80351,10 +80349,31 @@ angular.module('sampleApp')
 /* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
+__webpack_require__(37);
+
+angular.module('sampleApp')
+  .component('people', {
+    bindings: {
+      people: '<'
+    },
+    template: __webpack_require__(31),
+    controller: function () {
+      var ctrl = this;
+
+      ctrl.$onInit = function () {
+      };
+    }
+  });
+
+
+/***/ }),
+/* 14 */
+/***/ (function(module, exports, __webpack_require__) {
+
 (function () {
   'use strict';
 
-  __webpack_require__(34);
+  __webpack_require__(38);
 
   module.exports = angular
     .module('sampleApp')
@@ -80362,7 +80381,7 @@ angular.module('sampleApp')
       bindings: {
         scheduleItems: '<'
       },
-      template: __webpack_require__(29),
+      template: __webpack_require__(32),
       controller: scheduleController,
     });
 
@@ -80377,17 +80396,17 @@ angular.module('sampleApp')
 
 
 /***/ }),
-/* 14 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(35);
+__webpack_require__(39);
 
 angular.module('sampleApp')
   .component('sponsors', {
     bindings: {
       sponsors: '<'
     },
-    template: __webpack_require__(30),
+    template: __webpack_require__(33),
     controller: function () {
       var ctrl = this;
 
@@ -80398,7 +80417,7 @@ angular.module('sampleApp')
 
 
 /***/ }),
-/* 15 */
+/* 16 */
 /***/ (function(module, exports) {
 
 angular.module('sampleApp')
@@ -80455,7 +80474,7 @@ angular.module('sampleApp')
 
 
 /***/ }),
-/* 16 */
+/* 17 */
 /***/ (function(module, exports) {
 
 angular.module('sampleApp')
@@ -80475,7 +80494,7 @@ angular.module('sampleApp')
 
 
 /***/ }),
-/* 17 */
+/* 18 */
 /***/ (function(module, exports) {
 
 angular.module('sampleApp')
@@ -80531,7 +80550,7 @@ angular.module('sampleApp')
 
 
 /***/ }),
-/* 18 */
+/* 19 */
 /***/ (function(module, exports) {
 
 angular.module('sampleApp')
@@ -80564,7 +80583,7 @@ angular.module('sampleApp')
 
 
 /***/ }),
-/* 19 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)();
@@ -80578,7 +80597,7 @@ exports.push([module.i, "/*!\n * AngularJS Material Design\n * https://github.co
 
 
 /***/ }),
-/* 20 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)();
@@ -80593,20 +80612,6 @@ exports.push([module.i, "md-toolbar {\n  background-color: #41bcc4 !important;\n
 
 
 /***/ }),
-/* 21 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(0)();
-// imports
-
-
-// module
-exports.push([module.i, "landing .top-index {\n  z-index: 3; }\n", ""]);
-
-// exports
-
-
-/***/ }),
 /* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -80615,7 +80620,7 @@ exports = module.exports = __webpack_require__(0)();
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, "info h2 {\n  margin-bottom: 0px; }\n\ninfo p {\n  margin-top: 0px; }\n", ""]);
 
 // exports
 
@@ -80629,7 +80634,7 @@ exports = module.exports = __webpack_require__(0)();
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, "landing .top-index {\n  z-index: 3; }\n", ""]);
 
 // exports
 
@@ -80643,7 +80648,7 @@ exports = module.exports = __webpack_require__(0)();
 
 
 // module
-exports.push([module.i, "schedule div.md-subheader {\n  position: sticky;\n  top: 48px;\n  z-index: 2; }\n", ""]);
+exports.push([module.i, "", ""]);
 
 // exports
 
@@ -80664,42 +80669,102 @@ exports.push([module.i, "", ""]);
 
 /***/ }),
 /* 26 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "<ui-view layout flex></ui-view>\n\n<div layout=\"column\" layout-align=\"top center\" md-whiteframe=\"2\" class=\"top-index\">\n  <md-button class=\"md-icon-button\" ui-sref=\"schedule\">\n    <md-icon>schedule</md-icon>\n  </md-button>\n  <md-button class=\"md-icon-button\" ui-sref=\"people\">\n    <md-icon>people</md-icon>\n  </md-button>\n  <i class=\"material-icons\"></i>\n  <md-button class=\"md-icon-button\" ui-sref=\"locations\">\n    <md-icon>location_city</md-icon>\n  </md-button>\n  <md-button class=\"md-icon-button\" ui-sref=\"sponsors\">\n    <md-icon>favorite</md-icon>\n  </md-button>\n  <md-button class=\"md-icon-button\" ui-sref=\"info\">\n    <md-icon>info</md-icon>\n  </md-button>\n</div>\n";
+exports = module.exports = __webpack_require__(0)();
+// imports
+
+
+// module
+exports.push([module.i, "schedule div.md-subheader {\n  position: sticky;\n  top: 48px;\n  z-index: 2; }\n", ""]);
+
+// exports
+
 
 /***/ }),
 /* 27 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "<md-content layout=\"column\" flex>\n  <md-subheader>Locations</md-subheader>\n  <div>\n    <md-card ng-repeat=\"location in $ctrl.locations\">\n      <md-card-header>\n        <md-icon>{{location.icon || 'location_on'}}</md-icon>\n        <md-card-header-text>\n          <span class=\"md-title\">{{location.name}}</span>\n          <span class=\"md-subhead\">{{location.address}}</span>\n        </md-card-header-text>\n      </md-card-header>\n      <img ng-if=\"location.image\" ng-src=\"../../../images/{{location.imageName}}\" class=\"md-card-image\" alt=\"location image\">\n\n      <md-card-content>\n        <p>{{location.description}}</p>\n        <p>\n          <a ng-if=\"location.website\" target=\"_blank\" href=\"{{location.website}}\">{{location.website}}</a>\n        </p>\n      </md-card-content>\n    </md-card>\n  </div>\n</md-content>\n";
+exports = module.exports = __webpack_require__(0)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
 
 /***/ }),
 /* 28 */
 /***/ (function(module, exports) {
 
-module.exports = "<md-content layout=\"column\" flex>\n  <md-subheader>\n    Personel\n  </md-subheader>\n  <div>\n    <md-card ng-repeat=\"person in $ctrl.people\">\n      <md-card-title>\n        <md-card-title-text>\n          <span class=\"md-headline\">{{person.firstName}} {{person.lastName}}</span>\n          <span class=\"md-subhead\">{{person.title}}</span>\n          <span class=\"md-subhead\" ng-if=\"person.city\"><md-icon ng-style=\"{'color': person.color}\">location_on</md-icon> {{person.city}}</span>\n          <span class=\"md-subhead\" ng-if=\"person.phone\"><md-icon ng-style=\"{'color': person.color}\">phone</md-icon>{{person.phone}}</span>\n          <span class=\"md-subhead\" ng-if=\"person.email\"><md-icon ng-style=\"{'color': person.color}\">email</md-icon> {{person.email}}</span>\n        </md-card-title-text>\n        <md-card-title-media layout-padding>\n          <md-icon ng-style=\"{'color': person.color}\">location</md-icon>\n        </md-card-title-media>\n      </md-card-title>\n    </md-card>\n  </div>\n</md-content>\n";
+module.exports = "<md-content layout=\"column\" flex>\n  <md-subheader>\n    Other Info\n  </md-subheader>\n  <div layout=\"column\" layout-padding>\n    <h2>Code of Conduct</h2>\n    <p><a href=\"https://northamerica.startupbus.com/legal/code_of_conduct.html\">https://northamerica.startupbus.com/legal/code_of_conduct.html</a></p>\n\n    <h2>StartupBus FAQ</h2>\n    <p><a href=\"https://northamerica.startupbus.com/faq.html\">https://northamerica.startupbus.com/faq.html</a></p>\n  </div>\n</md-content>\n";
 
 /***/ }),
 /* 29 */
 /***/ (function(module, exports) {
 
-module.exports = "<md-content layout=\"column\" flex>\n  <md-list class=\"md-dense\" flex>\n    <div ng-repeat=\"(day, items) in $ctrl.scheduleItems\">\n      <md-subheader>{{day}}</md-subheader>\n      <md-list-item class=\"md-3-line\" ng-repeat=\"item in items\">\n        <md-icon ng-if=\"item.icon\">{{item.icon}}</md-icon>\n        <div class=\"md-list-item-text\">\n          <h3> {{ item.description }} </h3>\n          <p>{{item.startTime}} - {{item.endTime}}</p>\n          <p ng-if=\"item.locationName\">{{item.locationName}}</p>\n          <p ng-if=\"item.address\">{{item.address}}</p>\n        </div>\n      </md-list-item>\n    </div>\n  </md-list>\n</md-content>\n";
+module.exports = "<ui-view layout flex></ui-view>\n\n<div layout=\"column\" layout-align=\"top center\" md-whiteframe=\"2\" class=\"top-index\">\n  <md-button class=\"md-icon-button\" ui-sref=\"schedule\">\n    <md-icon>schedule</md-icon>\n  </md-button>\n  <md-button class=\"md-icon-button\" ui-sref=\"people\">\n    <md-icon>people</md-icon>\n  </md-button>\n  <i class=\"material-icons\"></i>\n  <md-button class=\"md-icon-button\" ui-sref=\"locations\">\n    <md-icon>location_city</md-icon>\n  </md-button>\n  <md-button class=\"md-icon-button\" ui-sref=\"sponsors\">\n    <md-icon>favorite</md-icon>\n  </md-button>\n  <md-button class=\"md-icon-button\" ui-sref=\"info\">\n    <md-icon>info</md-icon>\n  </md-button>\n</div>\n";
 
 /***/ }),
 /* 30 */
 /***/ (function(module, exports) {
 
-module.exports = "<md-content layout=\"column\" flex>\n  <md-subheader>Sponsors</md-subheader>\n  <div>\n    <md-card ng-repeat=\"sponsor in $ctrl.sponsors\">\n      <!-- <img ng-if=\"sponsor.imageName\" ng-src=\"../images/{{sponsor.imageName}}\" class=\"md-card-image\" alt=\"sponsor image\"> -->\n      <md-card-title>\n        <md-card-title-text>\n          <span class=\"md-headline\">{{sponsor.name}}</span>\n        </md-card-title-text>\n      </md-card-title>\n      <md-card-content>\n        <p>Facebook: <a href=\"{{sponsor.facebook.link}}\">{{sponsor.facebook.label}}</a></p>\n        <p>Twitter: <a href=\"{{sponsor.twitter.link}}\">{{sponsor.twitter.label}}</a></p>\n        <p>Instagram: <a href=\"{{sponsor.instagram.link}}\">{{sponsor.instagram.label}}</a></p>\n        <p>Website: <a href=\"{{sponsor.website}}\">{{sponsor.website}}</a></p>\n      </md-card-content>\n    </md-card>\n  </div>\n</md-content>\n";
+module.exports = "<md-content layout=\"column\" flex>\n  <md-subheader>Locations</md-subheader>\n  <div>\n    <md-card ng-repeat=\"location in $ctrl.locations\">\n      <md-card-header>\n        <md-icon>{{location.icon || 'location_on'}}</md-icon>\n        <md-card-header-text>\n          <span class=\"md-title\">{{location.name}}</span>\n          <span class=\"md-subhead\">{{location.address}}</span>\n        </md-card-header-text>\n      </md-card-header>\n      <img ng-if=\"location.image\" ng-src=\"../../../images/{{location.imageName}}\" class=\"md-card-image\" alt=\"location image\">\n\n      <md-card-content>\n        <p>{{location.description}}</p>\n        <p>\n          <a ng-if=\"location.website\" target=\"_blank\" href=\"{{location.website}}\">{{location.website}}</a>\n        </p>\n      </md-card-content>\n    </md-card>\n  </div>\n</md-content>\n";
 
 /***/ }),
 /* 31 */
+/***/ (function(module, exports) {
+
+module.exports = "<md-content layout=\"column\" flex>\n  <md-subheader>\n    Personel\n  </md-subheader>\n  <div>\n    <md-card ng-repeat=\"person in $ctrl.people\">\n      <md-card-title>\n        <md-card-title-text>\n          <span class=\"md-headline\">{{person.firstName}} {{person.lastName}}</span>\n          <span class=\"md-subhead\">{{person.title}}</span>\n          <span class=\"md-subhead\" ng-if=\"person.city\"><md-icon ng-style=\"{'color': person.color}\">location_on</md-icon> {{person.city}}</span>\n          <span class=\"md-subhead\" ng-if=\"person.phone\"><md-icon ng-style=\"{'color': person.color}\">phone</md-icon>{{person.phone}}</span>\n          <span class=\"md-subhead\" ng-if=\"person.email\"><md-icon ng-style=\"{'color': person.color}\">email</md-icon> {{person.email}}</span>\n        </md-card-title-text>\n        <md-card-title-media layout-padding>\n          <md-icon ng-style=\"{'color': person.color}\">location</md-icon>\n        </md-card-title-media>\n      </md-card-title>\n    </md-card>\n  </div>\n</md-content>\n";
+
+/***/ }),
+/* 32 */
+/***/ (function(module, exports) {
+
+module.exports = "<md-content layout=\"column\" flex>\n  <md-list class=\"md-dense\" flex>\n    <div ng-repeat=\"(day, items) in $ctrl.scheduleItems\">\n      <md-subheader>{{day}}</md-subheader>\n      <md-list-item class=\"md-3-line\" ng-repeat=\"item in items\">\n        <md-icon ng-if=\"item.icon\">{{item.icon}}</md-icon>\n        <div class=\"md-list-item-text\">\n          <h3> {{ item.description }} </h3>\n          <p>{{item.startTime}} - {{item.endTime}}</p>\n          <p ng-if=\"item.locationName\">{{item.locationName}}</p>\n          <p ng-if=\"item.address\">{{item.address}}</p>\n        </div>\n      </md-list-item>\n    </div>\n  </md-list>\n</md-content>\n";
+
+/***/ }),
+/* 33 */
+/***/ (function(module, exports) {
+
+module.exports = "<md-content layout=\"column\" flex>\n  <md-subheader>Sponsors</md-subheader>\n  <div>\n    <md-card ng-repeat=\"sponsor in $ctrl.sponsors\">\n      <!-- <img ng-if=\"sponsor.imageName\" ng-src=\"../images/{{sponsor.imageName}}\" class=\"md-card-image\" alt=\"sponsor image\"> -->\n      <md-card-title>\n        <md-card-title-text>\n          <span class=\"md-headline\">{{sponsor.name}}</span>\n        </md-card-title-text>\n      </md-card-title>\n      <md-card-content>\n        <p>Facebook: <a href=\"{{sponsor.facebook.link}}\">{{sponsor.facebook.label}}</a></p>\n        <p>Twitter: <a href=\"{{sponsor.twitter.link}}\">{{sponsor.twitter.label}}</a></p>\n        <p>Instagram: <a href=\"{{sponsor.instagram.link}}\">{{sponsor.instagram.label}}</a></p>\n        <p>Website: <a href=\"{{sponsor.website}}\">{{sponsor.website}}</a></p>\n      </md-card-content>\n    </md-card>\n  </div>\n</md-content>\n";
+
+/***/ }),
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(21);
+var content = __webpack_require__(22);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// add the styles to the DOM
+var update = __webpack_require__(1)(content, {});
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/sass-loader/index.js!./info.scss", function() {
+			var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/sass-loader/index.js!./info.scss");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 35 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(23);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
 var update = __webpack_require__(1)(content, {});
@@ -80719,13 +80784,13 @@ if(false) {
 }
 
 /***/ }),
-/* 32 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(22);
+var content = __webpack_require__(24);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
 var update = __webpack_require__(1)(content, {});
@@ -80745,13 +80810,13 @@ if(false) {
 }
 
 /***/ }),
-/* 33 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(23);
+var content = __webpack_require__(25);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
 var update = __webpack_require__(1)(content, {});
@@ -80771,13 +80836,13 @@ if(false) {
 }
 
 /***/ }),
-/* 34 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(24);
+var content = __webpack_require__(26);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
 var update = __webpack_require__(1)(content, {});
@@ -80797,13 +80862,13 @@ if(false) {
 }
 
 /***/ }),
-/* 35 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(25);
+var content = __webpack_require__(27);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
 var update = __webpack_require__(1)(content, {});
@@ -80823,7 +80888,7 @@ if(false) {
 }
 
 /***/ }),
-/* 36 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(8);
@@ -80910,6 +80975,11 @@ __webpack_require__(6);
         ctrl.sponsors = sponsors;
       }
     })
+    .state('info', {
+      parent: 'landing',
+      url: '/info',
+      template: '<info layout="column" flex></info>',
+    })
   }
 
   function appRun($rootScope) {
@@ -80919,15 +80989,16 @@ __webpack_require__(6);
   }
 })();
 
-__webpack_require__(16);
-__webpack_require__(15);
 __webpack_require__(17);
+__webpack_require__(16);
 __webpack_require__(18);
-__webpack_require__(10);
-__webpack_require__(13);
-__webpack_require__(12);
+__webpack_require__(19);
 __webpack_require__(11);
 __webpack_require__(14);
+__webpack_require__(13);
+__webpack_require__(12);
+__webpack_require__(15);
+__webpack_require__(10);
 
 
 /***/ })
