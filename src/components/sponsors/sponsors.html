@@ -1,21 +1,19 @@
 <md-content layout="column" flex>
-  <md-subheader>
-    Sponsors
-  </md-subheader>
+  <md-subheader>Sponsors</md-subheader>
   <div>
-    <!-- <md-card ng-repeat="person in $ctrl.people">
+    <md-card ng-repeat="sponsor in $ctrl.sponsors">
+      <!-- <img ng-if="sponsor.imageName" ng-src="../images/{{sponsor.imageName}}" class="md-card-image" alt="sponsor image"> -->
       <md-card-title>
         <md-card-title-text>
-          <span class="md-headline">{{person.firstName}} {{person.lastName}}</span>
-          <span class="md-subhead">{{person.title}}</span>
-          <span class="md-subhead" ng-if="person.city"><md-icon ng-style="{'color': person.color}">location_on</md-icon> {{person.city}}</span>
-          <span class="md-subhead" ng-if="person.phone"><md-icon ng-style="{'color': person.color}">phone</md-icon>{{person.phone}}</span>
-          <span class="md-subhead" ng-if="person.email"><md-icon ng-style="{'color': person.color}">email</md-icon> {{person.email}}</span>
+          <span class="md-headline">{{sponsor.name}}</span>
         </md-card-title-text>
-        <md-card-title-media layout-padding>
-          <md-icon ng-style="{'color': person.color}">location</md-icon>
-        </md-card-title-media>
       </md-card-title>
-    </md-card> -->
+      <md-card-content>
+        <p>Facebook: <a href="{{sponsor.facebook.link}}">{{sponsor.facebook.label}}</a></p>
+        <p>Twitter: <a href="{{sponsor.twitter.link}}">{{sponsor.twitter.label}}</a></p>
+        <p>Instagram: <a href="{{sponsor.instagram.link}}">{{sponsor.instagram.label}}</a></p>
+        <p>Website: <a href="{{sponsor.website}}">{{sponsor.website}}</a></p>
+      </md-card-content>
+    </md-card>
   </div>
 </md-content>

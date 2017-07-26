@@ -67,6 +67,21 @@ require('angular-ui-router/release/angular-ui-router.js');
         ctrl.locations = locations;
       }
     })
+    .state('sponsors', {
+      parent: 'landing',
+      url: '/sponsors',
+      template: '<sponsors sponsors="$resolve.sponsors" layout="column" flex></sponsors>',
+      resolve: {
+        sponsors: function (Sponsors) {
+          return Sponsors.getAll();
+        },
+      },
+      controllerAs: '$ctrl',
+      controller: function (sponsors) {
+        var ctrl = this;
+        ctrl.sponsors = sponsors;
+      }
+    })
   }
 
   function appRun($rootScope) {
@@ -79,7 +94,9 @@ require('angular-ui-router/release/angular-ui-router.js');
 require('./services/people.js');
 require('./services/locations.js');
 require('./services/schedule.js');
+require('./services/sponsors.js');
 require('./components/landing/landing.js');
 require('./components/schedule/schedule.js');
 require('./components/people/people.js');
 require('./components/locations/locations.js');
+require('./components/sponsors/sponsors.js');
