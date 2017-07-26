@@ -7,11 +7,13 @@ md-toolbar {
   max-height: 48px;
 }
 
+div.md-subheader {
+  background-color: #ECEFF1 !important;
+  padding-top: 0px;
+}
+
 md-list {
   padding-top: 0px;
-  div.md-subheader {
-    background-color: #ECEFF1 !important;
-  }
 }
 
 md-card-title-media div {
