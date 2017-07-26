@@ -2,7 +2,7 @@
   <md-subheader>Sponsors</md-subheader>
   <div>
     <md-card ng-repeat="sponsor in $ctrl.sponsors">
-      <!-- <img ng-if="sponsor.imageName" ng-src="../images/{{sponsor.imageName}}" class="md-card-image" alt="sponsor image"> -->
+      <img ng-if="sponsor.image" ng-src="{{sponsor.image}}" class="md-card-image" alt="sponsor image">
       <md-card-title>
         <md-card-title-text>
           <span class="md-headline">{{sponsor.name}}</span>

@@ -20,7 +20,7 @@ angular.module('sampleApp')
             icon: 'location_city'
           },
           {
-            name: 'Hotel in Savanah, GA',
+            name: 'Hotel in Savannah, GA',
             address: 'address tbd',
             description: 'Hotel we\'ll  be staying at in GA',
             imageName: 'tampa-convention-center',

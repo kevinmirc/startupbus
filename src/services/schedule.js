@@ -4,6 +4,9 @@ angular.module('sampleApp')
     getAll: function () {
       return $q(function (resolve, reject) {
         resolve({
+          'Pre-Launch (July 29)': [
+            {startTime: '6:30pm EDT', endTime: '8:00pm EDT', description: 'Launch Party', address: '333 S Franklin St, Tampa, FL 33602', locationName: 'Sail Pavilion @ Tampa Convention Center', icon: 'local_bar'},
+          ],
           'Day 1 (July 31)': [
             {startTime: '6:30am EDT', endTime: '7:00am EDT', description: 'Boarding in Tampa', address: '333 S Franklin St, Tampa, FL 33602', locationName: 'Tampa Convention Center'},
             {startTime: '7:00am EDT', endTime: '11:40am EDT', description: 'Drive to Jacksonville', address: null, icon: 'directions_bus'},
