@@ -20,10 +20,10 @@ angular.module('sampleApp')
             icon: 'location_city'
           },
           {
-            name: 'Hotel in Savannah, GA',
-            address: 'address tbd',
-            description: 'Hotel we\'ll  be staying at in GA',
-            imageName: 'tampa-convention-center',
+            name: 'Comfort Suites at Harbison',
+            address: '750 Saturn Pkwy Columbia, SC 29212',
+            description: 'Hotel we\'ll  be staying at in SC.',
+            imageName: 'sc-hotel',
             icon: 'local_hotel'
           },
           {
