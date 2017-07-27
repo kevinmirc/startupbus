@@ -1,6 +1,6 @@
 var webpack = require('webpack');
 var path = require('path');
-var CopyWebpackPlugin = require('copy-webpack-plugin');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -11,7 +11,11 @@ module.exports = {
     filename: 'app.js',
   },
   plugins: [
-    new CopyWebpackPlugin([{ from: 'src/index.html', to: 'index.html' }]),
+    new HtmlWebpackPlugin({
+      filename: 'index.html',
+      template: 'src/index.html',
+      hash: true
+    })
   ],
   module: {
     loaders: [

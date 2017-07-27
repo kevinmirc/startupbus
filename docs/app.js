@@ -80474,7 +80474,7 @@ angular.module('sampleApp')
           },
           {
             name: 'Clarion Hotel Grand Boutique',
-            website: {link: 'Website', label: 'https://www.choicehotels.com/louisiana/new-orleans/clarion-hotels/la087'},
+            website: {label: 'Website', link: 'https://www.choicehotels.com/louisiana/new-orleans/clarion-hotels/la087'},
             address: '2001 St Charles Ave New Orleans, LA 70130',
             description: 'All of StartupBus North America at one location!',
             imageName: 'clarion',
