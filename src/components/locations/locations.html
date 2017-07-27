@@ -14,7 +14,7 @@
       <md-card-content>
         <p>{{location.description}}</p>
         <p>
-          <a ng-if="location.website" target="_blank" href="{{location.website}}">{{location.website}}</a>
+          <a ng-if="location.website" target="_blank" href="{{location.website.link}}">{{location.website.label}}</a>
         </p>
       </md-card-content>
     </md-card>

@@ -80429,7 +80429,7 @@ angular.module('sampleApp')
           {
             name: 'The Sail Pavilion',
             address: '333 S Franklin St, Tampa, FL 33602',
-            website: 'https://www.eventbrite.com/e/2017-startupbus-florida-launch-party-tickets-36468182315',
+            website: {label: 'Event Link', link: 'https://www.eventbrite.com/e/2017-startupbus-florida-launch-party-tickets-36468182315'},
             description: 'Pre-Launch party held here! RSVP here:',
             imageName: 'sail-pavilion',
             icon: 'local_bar'
@@ -80450,7 +80450,7 @@ angular.module('sampleApp')
           },
           {
             name: 'Advent Coworking',
-            website: 'https://adventcoworking.com/',
+            website: {label: 'Website', link: 'https://adventcoworking.com/'},
             address: '933 Louise Ave #101, Charlotte, NC 28204',
             description: 'Advent Coworking will host us for breakfast/lunch and offer their space to work at.',
             imageName: '',
@@ -80466,7 +80466,7 @@ angular.module('sampleApp')
           },
           {
             name: 'Nashville Downtown Hostel',
-            website: 'https://www.nashvilledowntownhostel.com',
+            website: {label: 'Website', link: 'https://www.nashvilledowntownhostel.com'},
             address: '177 1st Ave N, Nashville, TN 37201',
             description: 'We\'ll spend night number two at this amazing hostel.',
             imageName: 'catawba',
@@ -80474,7 +80474,7 @@ angular.module('sampleApp')
           },
           {
             name: 'Clarion Hotel Grand Boutique',
-            website: 'https://www.choicehotels.com/louisiana/new-orleans/clarion-hotels/la087',
+            website: {link: 'Website', label: 'https://www.choicehotels.com/louisiana/new-orleans/clarion-hotels/la087'},
             address: '2001 St Charles Ave New Orleans, LA 70130',
             description: 'All of StartupBus North America at one location!',
             imageName: 'clarion',
@@ -80729,7 +80729,7 @@ module.exports = "<ui-view layout flex></ui-view>\n\n<div layout=\"column\" layo
 /* 30 */
 /***/ (function(module, exports) {
 
-module.exports = "<md-content layout=\"column\" flex>\n  <md-subheader>Locations</md-subheader>\n  <div>\n    <md-card ng-repeat=\"location in $ctrl.locations\">\n      <md-card-header>\n        <md-icon>{{location.icon || 'location_on'}}</md-icon>\n        <md-card-header-text>\n          <span class=\"md-title\">{{location.name}}</span>\n          <span class=\"md-subhead\">{{location.address}}</span>\n        </md-card-header-text>\n      </md-card-header>\n      <img ng-if=\"location.image\" ng-src=\"../../../images/{{location.imageName}}\" class=\"md-card-image\" alt=\"location image\">\n\n      <md-card-content>\n        <p>{{location.description}}</p>\n        <p>\n          <a ng-if=\"location.website\" target=\"_blank\" href=\"{{location.website}}\">{{location.website}}</a>\n        </p>\n      </md-card-content>\n    </md-card>\n  </div>\n</md-content>\n";
+module.exports = "<md-content layout=\"column\" flex>\n  <md-subheader>Locations</md-subheader>\n  <div>\n    <md-card ng-repeat=\"location in $ctrl.locations\">\n      <md-card-header>\n        <md-icon>{{location.icon || 'location_on'}}</md-icon>\n        <md-card-header-text>\n          <span class=\"md-title\">{{location.name}}</span>\n          <span class=\"md-subhead\">{{location.address}}</span>\n        </md-card-header-text>\n      </md-card-header>\n      <img ng-if=\"location.image\" ng-src=\"../../../images/{{location.imageName}}\" class=\"md-card-image\" alt=\"location image\">\n\n      <md-card-content>\n        <p>{{location.description}}</p>\n        <p>\n          <a ng-if=\"location.website\" target=\"_blank\" href=\"{{location.website.link}}\">{{location.website.label}}</a>\n        </p>\n      </md-card-content>\n    </md-card>\n  </div>\n</md-content>\n";
 
 /***/ }),
 /* 31 */
