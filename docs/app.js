@@ -80768,7 +80768,7 @@ module.exports = "<md-content layout=\"column\" flex>\n  <md-subheader>Locations
 /* 33 */
 /***/ (function(module, exports) {
 
-module.exports = "<md-content layout=\"column\" flex>\n  <md-subheader>\n    Payments\n  </md-subheader>\n  <p style=\"padding: 5px; margin-bottom: 0px;\">\n    <em>* The Columbia, SC requires a group payment for the $90 rate. All riders must pay $30 for the Columbia, SC hotel before boarding the bus</em>\n  </p>\n  <div layout=\"column\" layout-padding>\n    <h2>Venmo</h2>\n    <p>@KevinMircovich</p>\n\n    <h2>Credit/Debit Card</h2>\n    <p>\n      <a href=\"https://cash.me/$KevinMircovich\" target=\"_blank\">https://cash.me/$KevinMircovich</a>\n    </p>\n\n    <h2>PayPal Link</h2>\n    <p>\n      <a href=\"https://www.paypal.me/StartupBusFL/30\" target=\"_blank\">\n        https://www.paypal.me/StartupBusFL/30\n      </a>\n    </p>\n  </div>\n</md-content>\n";
+module.exports = "<md-content layout=\"column\" flex>\n  <md-subheader>\n    Payments\n  </md-subheader>\n  <p style=\"padding: 5px; margin-bottom: 0px;\">\n    <em>* The Columbia, SC requires a group payment for the $99.90 rate. All riders must pay $33.3 for the Columbia, SC hotel before boarding the bus</em>\n  </p>\n  <div layout=\"column\" layout-padding>\n    <h2>Venmo</h2>\n    <p>@KevinMircovich</p>\n\n    <h2>Credit/Debit Card</h2>\n    <p>\n      <a href=\"https://cash.me/$KevinMircovich\" target=\"_blank\">https://cash.me/$KevinMircovich</a>\n    </p>\n\n    <h2>PayPal Link</h2>\n    <p>\n      <a href=\"https://www.paypal.me/StartupBusFL/33.3\" target=\"_blank\">\n        https://www.paypal.me/StartupBusFL/33.3\n      </a>\n    </p>\n  </div>\n</md-content>\n";
 
 /***/ }),
 /* 34 */
