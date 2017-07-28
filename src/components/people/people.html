@@ -1,8 +1,8 @@
 <md-content layout="column" flex>
-  <md-subheader>
-    Personel
-  </md-subheader>
-  <div>
+  <div class="">
+    <md-subheader>
+      Personel
+    </md-subheader>
     <md-card ng-repeat="person in $ctrl.people">
       <md-card-title>
         <md-card-title-text>
@@ -12,9 +12,6 @@
           <span class="md-subhead" ng-if="person.phone"><md-icon ng-style="{'color': person.color}">phone</md-icon>{{person.phone}}</span>
           <span class="md-subhead" ng-if="person.email"><md-icon ng-style="{'color': person.color}">email</md-icon> {{person.email}}</span>
         </md-card-title-text>
-        <md-card-title-media layout-padding>
-          <md-icon ng-style="{'color': person.color}">location</md-icon>
-        </md-card-title-media>
       </md-card-title>
     </md-card>
   </div>

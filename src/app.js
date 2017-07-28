@@ -16,7 +16,8 @@ require('angular-ui-router/release/angular-ui-router.js');
     .config(appConfig)
     .run(appRun);
 
-  function appConfig($stateProvider) {
+  function appConfig($stateProvider, $urlRouterProvider) {
+    $urlRouterProvider.otherwise('/schedule');
     $stateProvider
     .state('landing', {
       url: '',
@@ -87,6 +88,11 @@ require('angular-ui-router/release/angular-ui-router.js');
       url: '/info',
       template: '<info layout="column" flex></info>',
     })
+    .state('payments', {
+      parent: 'landing',
+      url: '/payments',
+      template: '<payments layout="column" flex></payments>',
+    })
   }
 
   function appRun($rootScope) {
@@ -106,3 +112,4 @@ require('./components/people/people.js');
 require('./components/locations/locations.js');
 require('./components/sponsors/sponsors.js');
 require('./components/info/info.js');
+require('./components/payments/payments.js');
