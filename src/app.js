@@ -21,6 +21,7 @@ require('angular-ui-router/release/angular-ui-router.js');
     $stateProvider
     .state('landing', {
       url: '',
+      abstract: true,
       template: '<landing layout flex></landing>',
     })
     .state('people', {
