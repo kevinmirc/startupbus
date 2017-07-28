@@ -80997,6 +80997,7 @@ __webpack_require__(6);
     $stateProvider
     .state('landing', {
       url: '',
+      abstract: true,
       template: '<landing layout flex></landing>',
     })
     .state('people', {
