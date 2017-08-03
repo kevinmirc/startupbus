@@ -41,10 +41,21 @@ angular.module('sampleApp')
             {startTime: 'time tbd', endTime: 'time tbd', description: 'Hotel Check-in', address: '2001 St Charles Ave New Orleans, LA 70130', locationName: 'Clarion Hotel Grand Boutique', icon: 'local_hotel'},
           ],
           'Day 4 (August 3)': [
-            {startTime: '7:00am CDT', endTime: '6:00pm CDT', description: 'StartupBus North America Finals', address: null, icon: 'whatshot'},
+            {startTime: '9:00am CDT', endTime: '10:00am CDT', description: 'Arrive @ Landing Zone', address: null, icon: ''},
+            {startTime: '12:00pm CDT', endTime: '12:30pm CDT', description: 'Opening Remarks / Announce Schedule', address: null, icon: ''},
+            {startTime: '12:30pm CDT', endTime: '3:00pm CDT', description: 'Begin Qualifying Round', address: null, icon: ''},
+            {startTime: '3:00pm CDT', endTime: '3:30pm CDT', description: 'Qualifications end / Judges Deliberate', address: null, icon: ''},
+            {startTime: '3:30pm CDT', endTime: '4:00pm CDT', description: 'Congratulations! Family Picture! Semi-Finalists Announced', address: null, icon: ''},
+            {startTime: '5:00pm CDT', endTime: '6:45pm CDT', description: 'Semi-Finals Begin + Judge Introductions', address: null, icon: ''},
+            {startTime: '7:00pm CDT', endTime: '7:45pm CDT', description: 'Announce Finialists', address: null, icon: ''},
+            {startTime: '7:45pm CDT', endTime: '2:00am CDT', description: 'Head to Urban South Brewery', address: null, icon: ''}
           ],
           'Day 5 (August 4)': [
-            {startTime: '7:00am CDT', endTime: '6:00pm CDT', description: 'StartupBus North America Finals', address: null, icon: 'whatshot'},
+            {startTime: '12:00pm CDT', endTime: '1:00pm CDT', description: 'Arrive at Jazz Market', address: null, icon: ''},
+            {startTime: '2:30pm CDT', endTime: '3:00pm CDT', description: 'Judges Introductions', address: null, icon: ''},
+            {startTime: '3:00pm CDT', endTime: '4:00pm CDT', description: 'Pitches Start', address: null, icon: ''},
+            {startTime: '4:00pm CDT', endTime: '4:30pm CDT', description: 'Judges Deliberate', address: null, icon: ''},
+            {startTime: '4:30pm CDT', endTime: '5:00pm CDT', description: 'Announce Winner!', address: null, icon: ''}
           ]
         });
       });
